@@ -1,0 +1,9 @@
+version: "3.1"
+services:
+  polipo:
+    build: .
+    volumes:
+      - ./config:/polipo/config
+    ports:
+      - 127.0.0.1:1081:1081
+    restart: always
